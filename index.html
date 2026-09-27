@@ -13,9 +13,9 @@
             <h1>Задание 2</h1>
         </div>
         <nav>
-            <a href="">Ссылка 1</a>
-            <a href="">Ссылка 2</a>
-            <a href="">Ссылка 3</a>
+            <a href="#links">Ссылки</a>
+            <a href="#table">Таблица</a>
+            <a href="#form">Форма</a>
         </nav>
     </header>
 
@@ -23,7 +23,7 @@
         <div class="content-flex-container">
             
             <div class="block-links">
-                <ul>
+                <ul id="links">
                     <li><a href="http://kubsu.ru">Главная КубГУ (HTTP)</a></li>
                     <li><a href="https://kubsu.ru">Главная КубГУ (HTTPS)</a></li>
                     <li><a href="https://kubsu.ru"><img src="flower.jpg" alt="Цветок" width="600"></a></li>
@@ -61,7 +61,7 @@
             </div>
         
             <div class="block-table">
-                <table>
+                <table id="table">
                     <tbody>
                         <tr class="odd">
                             <th>День</th>
@@ -102,7 +102,7 @@
             </div>
         
             <div class="block-form">
-                <form action="/" method="POST">
+                <form action="/" method="POST" id="form">
                     <label>
                         ФИО:<br>
                         <input name="fio" type="text" placeholder="Введите ваше ФИО" oninput="this.value = this.value.replace(/[^A-Za-zА-Яа-яЁё\s\-]/g, '')" required>
